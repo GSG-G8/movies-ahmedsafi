@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchForm from './SearchForm';
+import Display from './Display';
 
 export default class App extends React.Component {
   state = {
@@ -21,7 +22,9 @@ export default class App extends React.Component {
             <h3>Where you can keep track of everything you want to watch.</h3>
           </div>
         </header>
-        <main>{/* <Display /> */}</main>
+        <main>
+          <Display value={this.state.searchValue} />
+        </main>
       </div>
     );
   }
