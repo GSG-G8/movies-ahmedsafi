@@ -52,8 +52,8 @@ export default class display extends React.Component {
     }
     return (
       <div>
+        <h3 className="trend">{this.props.value ? 'Search Results' : 'Top Trending'}</h3>
         <ul className="grid">
-          <h3 className="trend">Search Results</h3>
           {items.map(item => (
             <li key={item.id} className="card">
               <img
